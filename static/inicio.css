@@ -1,0 +1,243 @@
+/* EN GENERAL CAMBIE EL COLOR CELESTE POR EL MORADO Y EL FONDO POR NEGRO, COMENTE TODO LO QUE CAMBIE*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif, "Poppins"
+}
+
+body {
+    min-height: 100vh;
+    background: black;
+    background-size:cover;
+    background-position:inherit;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.7rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(157, 61, 205, 0.4);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(157, 61, 205, 0.4), transparent);
+    transition: .5s;
+}
+
+.header:hover::after {
+    left: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+/*AGREGUE ESTO*/
+.navbar a:hover {
+    color: darkorchid;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    } 
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgb(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.25rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.1s * var(--i));
+    }
+}
+
+/* CAMBIE EL BOTON AL PASARLE EL CURSOS POR ENCIMA Y LO BAJE*/
+button{
+    margin-top: 95px;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-left: 20px;
+    border: none;
+}
+
+.boton{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.boton:hover{
+    background: darkorchid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+
+/*AGREGUE DESDE ACA HASTA EL FINAL*/
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 20px 00px 20px;
+    margin-top: 30px;
+    height: 400px;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: rgb(239, 233, 241);
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+h4 {
+    font-size: 15px;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+h5 {
+    font-size: 15px;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.general-3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    height: 400px;
+}
+
+

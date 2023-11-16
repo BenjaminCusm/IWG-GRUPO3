@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1 style="text-align:center; margin-block:50px;">¡Hey, puedes acceder a esto solo si estas logeado!<br>
+    <br>Por favor LOGEATE para poder crear posts y tambien comentar en los ultimos temas.<br>
+    <br><a href="  {% url 'signin' %} " > Presiona aquí para logearte</a><br>
+    <br><a href="  {% url 'signup' %} " > Presiona aquí para registrarte</a></h1>
+
+
+
+{% endblock content %}

@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{% static 'contacto.css' %}">
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="{% static 'imagenes/logo_.png' %}" height="70px" width="70px" alt="">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="{% url 'inicio' %}" class="boton">Inicio</a>
+            <a href="{% url 'home' %}" style="--i:3;">Foro</a>
+            <a href="#" style="--i:4;">Contacto</a>
+
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h1>¿Quienes somos?</h1>
+        <p>Somos estudiantes de la Universidad Técnica Federico Santa María que buscamos hacer un cambio para poder mejorar nuestra calidad de vida.
+           Nuestra visión para poder lograrlo, se basa en hacer retos que promuevan acciones que ayuden a nuestro planeta a disminuir la huella de carbono y, ¡que mejor
+           que a través de la diversión!.
+           
+        </p>
+
+    <p>Es por esto, que presentamos ECO-CONECTION, un foro en el que tú y tus amigos podrán participar y divertirse con desafíos que fomenten el cuidado de nuestro querido planeta tierra.</p>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="{% static 'imagenes/juanca.jpg' %}" alt="">
+                <h3>Karina</h3>
+                <p>Le gusta el Minecraft</p>
+            </div>
+            <div class="box">
+                <img src="{% static 'imagenes/juanca.jpg' %}" alt="">
+                <h3>Benjamín</h3>
+                <p>Jugador profesional de osu!</p>
+            </div>
+            <div class="box">
+                <img src="{% static 'imagenes/juanca.jpg' %}" alt="">
+                <h3>Nicolas</h3>
+                <p>Jugador profesional de League of legends.</p>
+            </div>
+            <div class="box">
+                <img src="{% static 'imagenes/juanca.jpg' %}" alt="">
+                <h3>Oscar</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-contact">
+        <h2 class="title" style="text-align: center;">Redes sociales</h2>
+
+        <div class="footer-section">
+
+            <div class="f-enlaces">
+                <a href="https://www.instagram.com/_.k4riina._/">Instagram</a>
+                <img src="{% static 'imagenes/karinaig.jpg' %}" alt="">
+                <h3>Contacto: karinaaliaga62016@gmail.com</h3>
+            </div>
+            <div class="f-enlaces">
+                <a href="https://www.instagram.com/thedarklord_300/">Instagram</a>
+                <img src="{% static 'imagenes/benjaminig.jpg' %}" alt="">
+                <h3>Contacto: benjaminc.pers@gmail.com</h3>
+            </div>
+            <div class="f-enlaces">
+                <a href="https://www.instagram.com/n_nico_p.l.m.v/">Instagram</a>
+                <img src="{% static 'imagenes/nicolasig.jpg' %}" alt="">
+                <h3>Contacto: nicolasp3r3zlantadilla@gmail.com</h3>
+            </div>
+            <div class="f-enlaces">
+                <a href="https://www.instagram.com/el_oscarlr/">Instagram</a>
+                <img src="{% static 'imagenes/oscarig.jpg' %}" alt="">
+                <h3>Contacto: os.lantadilla@gmail.com</h3>
+            </div>
+        </div>
+
+
+        </div>
+
+    </section>
+
+</body>
