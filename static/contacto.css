@@ -194,7 +194,7 @@ body {
     text-align: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     background: whitesmoke;
-    margin: 20px 20px;
+    margin: 50px 50px;
     border-radius: 20px;
 }
 
@@ -257,6 +257,7 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 0;
+    margin-left: 103px;
 }
 
 .f-enlaces h3{
@@ -270,6 +271,7 @@ body {
 .f-enlaces img{
     height: 100px;
     width: 100px;
+    margin-left: 90px;
 }
 
 
