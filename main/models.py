@@ -17,7 +17,7 @@ class Author(models.Model):
     slug = slug = models.SlugField(max_length=400, unique=True, blank=True)
     bio = HTMLField()
     points = models.IntegerField(default=0)
-    profile_pic = ResizedImageField(size=[50, 80], quality=100, upload_to="authors", default=None, blank=False, null=True)
+    profile_pic = ResizedImageField(size=[50, 80], quality=100, upload_to="media/", default=None, blank=False, null=True)
 
 
     def __str__(self):
