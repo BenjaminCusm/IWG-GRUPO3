@@ -36,10 +36,10 @@
     <!-- Forum Info -->
     <div class="forum-info">
         <div class="chart">
-            Estadisticas &nbsp;<i class="fa fa-bar-chart"></i>
+            Estadisticas de la página &nbsp;<i class="fa fa-bar-chart"></i>
         </div>
-        <span><u>{{num_posts}}</u> Posts en <u>{{num_categories}}</u> Categoria por <u>{{num_users}}</u> Miembros.</span><br>
-        <span>Ultimo post: <b><a href="{{last_post.get_url}}">{{last_post.title}}</a></b> en {{last_post.date|date}} por <a href="">{{last_post.user.fullname|title}}</a></span>.<br>
+        <span><u>{{num_posts}}</u> Posts en <u>{{num_categories}}</u> Categorias por <u>{{num_users}}</u> Miembros.</span><br>
+        <span>Ultimo post: <b><a href="{{last_post.get_url}}">{{last_post.title}}</a></b> el {{last_post.date|date}} por <a href="">{{last_post.user.fullname|title}}</a></span>.<br>
         <span>Revisa <a href="{% url 'latest_posts' %}">los ultimos posts</a> .</span><br>
     </div>
 

@@ -15,7 +15,7 @@
                 <div class="status">Estado</div>
                 <div class="subjects">Subjetos</div>
                 <div class="replies">Respuestas/Vistas</div>
-                <div class="last-reply">Ultima respuesta</div>
+                <div class="last-reply">Ultimo comentario</div>
             </div>
 
             {% for post in posts %}
@@ -72,16 +72,6 @@
             </div>
         <!--pagination ends-->
     </div>
-
-    <div class="note">
-        <span><i class="fa fa-frown-o"></i>&nbsp; Topico sin interacción</span>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-share-square"></i></a><br>
-        <span><i class="fa fa-book"></i>&nbsp; Topico con poca interacción</span>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-share-square"></i></a><br>
-        <span><i class="fa fa-fire"></i>&nbsp; Topico popular</span>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-share-square"></i></a><br>
-        <span><i class="fa fa-rocket"></i>&nbsp; Topico con mucha interacción</span>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-share-square"></i></a><br>
-        <span><i class="fa fa-lock"></i>&nbsp; Topico cerrado</span>&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-share-square"></i></a><br>
-    </div>
-
-
 
     {% endblock content %}
 
